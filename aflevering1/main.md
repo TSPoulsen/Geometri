@@ -9,14 +9,14 @@ $$f_1(x,y,z) = x^2 + y^2 + z^2 = c_1 = 1$$
 har at løsningsmængden må være en kugle med radius $r_{k} = \sqrt{c_1} = 1$, og 
 centrum i $(0,0,0)$.
 
-Derudover ved vi at en cylinder i $\R^3$ 
+Derudover ved vi at en cirkel i $\R^2$ 
 er givet ved ligningen $(x - x_0)^2 + (y- y_0)^2 = r_c^2$,
 hvor radius er $r_c$ og centrum er $(x_0,y_0)$,
 og derfor må vi kunne genkende at i ligningen 
 $$f_2(x,y,z) = (x-\frac{1}{2})^2 + y^2 = c_2 = 1$$
 har vi en cylinder med radius $r_c = a$ og centrum i $(\frac{1}{2},0, z)$.
 Altså må symmetriaksen være $(\frac{1}{2}, 0, z)$.
-Så løsningsmængden til begge disse ligninger må være fællesmængden af kuglen og en cylinderen hvilket er tilsvarende mængden
+Så løsningsmængden til begge disse ligninger må være fællesmængden af kuglen og en cylinderen hvilket er tilsvarende niveaumængden
 $$ N := \{(x,y,z) \text{  } | \text{  } f(x,y,z) = c\}$$
 
 ### **(b)**
@@ -57,7 +57,7 @@ Vi kan derudover konkludere at Jacobimatricen kun vil have rang 1 når række 2 
 hvilket kun sker når $y_0 = 0$ og $x_0 = \frac{1}{2} \lor z_0 = 0$.
 Da vi nu kan konkludere at $y_0$ skal være $0$, kan vi derfor også konkludere at $x \neq \frac{1}{2}$, da ligningen
 $$ (x- \frac{1}{2})^2 + y^2 = a^2 $$
-ikke kan løses for $a > 0$. Altså må vi kunne konkludere at $z_0$ også skal være $0$,
+så ikke kan løses for $a > 0$. Altså må vi kunne konkludere at $z_0$ også skal være $0$,
  og der ingen begrænsning på $x_0$ for at Jacobimatricen skal have rang 1. 
 
 Men da $p \in N$ og $0 < a < \frac{3}{2}$, har vi også at $x_0$ skal kunne løse ulighederne
@@ -84,6 +84,16 @@ hvilket rimelig let kan ses ud fra $Df(p)$.
 
 Altså siger sætningen[^1] at for et vilkårligt $p \in N$ at vi kan finde et åbent interval $W \subset \R^3$ omkring $p$ sådan at mængden $W \cap N$ kan blive parametriseret af en glat kurve, hvilket kan ses som grafen for en glat funktion $g: \R \to \R^2$, enten som $g(x) =(y,z)$, $g(y) = (x,z)$ eller $g(z) = (x,y)$,
 hvor to af variablene er givet som funktion af den sidste variabel.
+
+
+### **(e)**
+Sætningen om implicitte funktioner siger intet om hvorvidt der findes en glat funktion omkring punktet $(1,0,0)$ bare fordi at i dette tilfælde er rækkerne i Jacobimatricen afhængige. Så det kunne sagtens være det stadig var muligt.
+
+Jeg kan ikke løse opgaven stringent (altså ved at løse ligningnerne eksplicit) eftersom jeg ikke ved hvilke lignigner der skal løses.
+Hvis jeg skal genaflevere opgaven (eftersom denne delopgave mangler) vil jeg gerne have et hint til hvordan det kan gøres, da jeg ikke gider argumentere ud fra en visualisering og det ikke føles som tilstrækkeligt.
+
+
+
 
 
 [^1]: Jeg bruger specifikt korrolar 1.7 i bogen "Curves and Surfaces" af Henrik Schlichtkrull
