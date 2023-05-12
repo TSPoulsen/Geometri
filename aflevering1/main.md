@@ -1,3 +1,5 @@
+
+\newcommand{\R}{\mathbb{R}}
 # **Afleveringsopgave 1 - Geometri 1**
 ### **Tim Sehested Poulsen - tpw705**
 
@@ -25,19 +27,16 @@ og da begge koordiantefunktionerne for $f$ er givet ved en sum af sammensatte fu
 som hver især er differentiable, må $f$ være differentiabel.
 
 Jacobimatricen $Df(p)$ for et $p=(x_0,y_0,z_0) \in \R^3$ er derfor givet ved
-$$
-Df(p) = 
+$$Df(p) = 
 \begin{bmatrix}
    \frac{\partial f_1}{\partial x}(p) & \frac{\partial f_1}{\partial y}(p) & \frac{\partial f_1}{\partial z}(p) \\[0.3cm]
-
    \frac{\partial f_2}{\partial x}(p) & \frac{\partial f_2}{\partial y}(p) & \frac{\partial f_3}{\partial z}(p) \\
 \end{bmatrix}
 =
 \begin{bmatrix}
     2x_0 & 2y_0 & 2z_0 \\[0.3cm]
     2x_0 -1 & 2y_0 & 0 \\
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
 ### **(c)**
 Jeg vil først kigge på i hvilke $p \in \R^3$ hvor $Df(p)$ har rang strengt mindre end 2. For at gøre det reducerer jeg $Df(p)$ til rækkeechelonform, hvilket er:
@@ -61,11 +60,12 @@ så ikke kan løses for $a > 0$. Altså må vi kunne konkludere at $z_0$ også s
  og der ingen begrænsning på $x_0$ for at Jacobimatricen skal have rang 1. 
 
 Men da $p \in N$ og $0 < a < \frac{3}{2}$, har vi også at $x_0$ skal kunne løse ulighederne
-$$ 
+$$\begin{aligned}
 0 < (x_0 - \frac{1}{2})^2 + y_0^2 < \left(\frac{3}{2} \right)^2 \\
 \iff 0 < (x_0 - \frac{1}{2})^2  < \left(\frac{3}{2} \right)^2 \\
 \iff 0 < |x_0 - \frac{1}{2} | < \frac{3}{2} \\
 \iff x_0 \in I_x :=(-1, \frac{1}{2}) \cup (\frac{1}{2}, 2) 
+\end{aligned}
 $$
 Samtidig har vi også at $x_0$ skal være en løsning til $f_1(x,y,z) = 1$, hvilket er
 $$
@@ -89,10 +89,14 @@ hvor to af variablene er givet som funktion af den sidste variabel.
 ### **(e)**
 Sætningen om implicitte funktioner siger intet om hvorvidt der findes en glat funktion omkring punktet $(1,0,0)$ bare fordi at i dette tilfælde er rækkerne i Jacobimatricen afhængige. Så det kunne sagtens være det stadig var muligt.
 
-Jeg kan ikke løse opgaven stringent (altså ved at løse ligningnerne eksplicit) eftersom jeg ikke ved hvilke lignigner der skal løses.
-Hvis jeg skal genaflevere opgaven (eftersom denne delopgave mangler) vil jeg gerne have et hint til hvordan det kan gøres, da jeg ikke gider argumentere ud fra en visualisering og det ikke føles som tilstrækkeligt.
+<span style="color:red"> Ud fra figuren herunder kan det ses at i fællesmængden af cylinderet og kuglen  er et "buet kryds".
+Altså i en kugle omkring (1,0,0) vil der for hvert x-værdi være 4 forskellige punkter som alle er skæringspunkter mellem den røde kugle og cylinderen.
+derfor kan vi ikke skrive det som en graf af h(x) eftersom det vil kræve at for et givent x er h(x) entydigt bestemt.
+Det samme gør sig gældene for en funktion h(y) eftersom der for hvert y i denne fællesmængde lige omkring (1,0,0) vil være 2 punkter som også ligger i denn fællesmængde (specifikt (x,y,z) og (x,y,-z)).
+Det samme vil gøre sig gældende for en funktion h(z).
+Altså vil der i ingen af tilfældene være punkter som er entydigt bestemt givet bare 1 af de 3 variable. Så det må være umuligt at skrive fællesmængden som grafen for en glat funktion i en kugle omkring (1,0,0)</span>
 
-
+![figur 1](pic.jpg "title")
 
 
 
